@@ -1,0 +1,8 @@
+<GridLayout class="bg-yellow-100 p-4" rows="auto, auto">
+    <Label text="⚠️ Alerta de Restrição" class="text-lg font-bold text-yellow-700" row="0"/>
+    <StackLayout row="1" class="mt-2">
+        <Label text="{{ restrictionType }}" class="font-bold"/>
+        <Label text="{{ description }}" class="text-gray-700"/>
+        <Button text="Ver Rota Alternativa" tap="{{ showAlternativeRoute }}" class="btn btn-warning mt-2"/>
+    </StackLayout>
+</GridLayout>

@@ -1,0 +1,15 @@
+<StackLayout class="p-4">
+    <Label text="Postos Parceiros Próximos" class="text-xl font-bold mb-4"/>
+    <ListView items="{{ truckStops }}">
+        <ListView.itemTemplate>
+            <GridLayout columns="*, auto" class="p-2 border-b border-gray-200">
+                <StackLayout col="0">
+                    <Label text="{{ name }}" class="font-bold"/>
+                    <Label text="{{ 'Diesel: R$ ' + fuelPrices.diesel }}" class="text-green-600"/>
+                    <Label text="{{ isPartner ? '🌟 Posto Parceiro' : '' }}" class="text-blue-500"/>
+                </StackLayout>
+                <Button text="Navegar" tap="{{ $parent.navigateToStop }}" col="1" class="btn btn-sm"/>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</StackLayout>

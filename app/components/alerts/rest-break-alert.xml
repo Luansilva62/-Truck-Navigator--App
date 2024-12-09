@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <StackLayout class="p-4 bg-red-100">
+        <Label text="Alerta de Descanso!" class="text-xl font-bold text-red-600"/>
+        <Label text="Você está dirigindo há muito tempo. Recomendamos uma parada para descanso." class="text-gray-700 mt-2"/>
+        <Button text="Encontrar Parada Próxima" tap="{{ findNearbyStop }}" class="btn btn-primary mt-4"/>
+        <Button text="Continuar Dirigindo" tap="{{ dismiss }}" class="btn btn-secondary mt-2"/>
+    </StackLayout>
+</Page>

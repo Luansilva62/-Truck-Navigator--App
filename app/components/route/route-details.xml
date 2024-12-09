@@ -1,0 +1,16 @@
+<StackLayout class="p-4">
+    <Label text="{{ routeName }}" class="text-xl font-bold mb-2"/>
+    <Label text="{{ estimatedTime }}" class="text-lg"/>
+    <Label text="{{ distance }}" class="text-lg"/>
+    
+    <StackLayout class="mt-4">
+        <Label text="Restrições" class="font-bold"/>
+        <ListView items="{{ restrictions }}">
+            <ListView.itemTemplate>
+                <Label text="{{ description }}" class="text-red-500"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+    
+    <Button text="Iniciar Navegação" tap="{{ startNavigation }}" class="btn btn-primary mt-4"/>
+</StackLayout>
